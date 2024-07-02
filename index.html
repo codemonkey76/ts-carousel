@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Carousel Demo</title>
+    <style>
+      .site-container {
+        max-width: 1500px;
+        margin: 3em auto;
+        padding: 2em;
+      }
+
+      .demo-title {
+        text-align: center;
+        margin-bottom: 2em;
+      }
+
+      .carousel + .carousel {
+        margin-top: 4em;
+      }
+    </style>
+    <link rel="stylesheet" href="src/animate.css">
+  </head>
+
+  <body>
+    <div class="w-full">
+      <h1 class="demo-title">JavaScript Carousel Demo</h1>
+      <div
+        id="carousel-1"
+        class="carousel relative"
+        role="region"
+        aria-labelledby="carousel-1-title"
+      >
+        <h2 class="carousel-title sr-only" id="carousel-1-title">
+          Javascript Carousel Demo
+        </h2>
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-1-slide-1-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h1 class="animation-bounce-in-left animation-duration-1s animation-delay-1s opacity-0">Hosted PBX</h1>
+              <h4 class="animation-bounce-in-left animation-duration-1s animation-delay-2s opacity-0">Cloud-based communication system without the chunky equipment.</h4>
+              <div id="specs" class="flex flex-col">
+                <span class="animation-fade-in animation-duration-1s animation-delay-3s opacity-0">Can come with transportable handsets.</span>
+                <span class="animation-fade-in animation-duration-1s animation-delay-4s opacity-0">Compatible with your personal mobile devices.</span>
+                <span class="animation-fade-in animation-duration-1s animation-delay-5s opacity-0">Unlimited extensions.</span>
+              </div>
+              <div>
+                <button class="animation-zoom-in animation-duration-1s animation-delay-6s opacity-0">View All Plans</button>
+                <button class="animation-zoom-in animation-duration-1s animation-delay-6s opacity-0">Try It Free</button>
+              </div>
+            </div>
+
+            <img
+              src="images/pbx.jpg"
+              alt="Hosted PBX"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-1-slide-2-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-1-slide-2-title">Virtual Servers</h3>
+              <p>Virtual Servers</p>
+            </div>
+            <img
+              src="images/virtual-server.jpg"
+              alt="Virtual Servers"
+            />
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-1-slide-3-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-1-slide-3-title">Website Hosting</h3>
+              <p>Website Hosting</p>
+            </div>
+
+            <img
+              src="images/website-hosting.jpg"
+              alt="Website Hosting"
+            />
+          </div>
+        </div>
+        <div
+          class="slide"
+          role="tabpanel"
+          aria-labelledby="carousel-1-slide-4-title"
+        >
+          <div class="slide-content">
+            <div class="slide-caption">
+              <h3 id="carousel-1-slide-4-title">Dedicated Servers</h3>
+              <p>Dedicated Servers</p>
+            </div>
+
+            <img
+              src="images/dedicated-server.jpg"
+              alt="Dedicated Servers"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
