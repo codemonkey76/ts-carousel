@@ -16,6 +16,7 @@
   --carousel-pagination-gap: 0.75em;
   --carousel-pagination-btn-bg: #aaa;
   --carousel-pagination-btn-active-bg: #333;
+  --carousel-brand: #80699D;
 }
 
 /* Box-sizing reset */
@@ -68,7 +69,6 @@ iframe {
 
 .slide-caption {
   width: 100%;
-  position: absolute;
   padding: var(--carousel-caption-padding);
   left: 0;
   bottom: 0;
@@ -146,4 +146,26 @@ iframe {
 .carousel-pagination .carousel-btn--active {
   transform: scale(1.5);
   background-color: var(--carousel-pagination-btn-active-bg);
+}
+
+.text-brand {
+  color: var(--carousel-brand);
+}
+
+.bg-brand {
+  color: var(--carousel-brand);
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.text-shadow {
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 2px;
+}
+
+.svg-shadow {
+  filter: drop-shadow(1px 1px 2px rgb(0 0 0 / 0.6));
 }

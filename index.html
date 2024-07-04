@@ -20,97 +20,190 @@
         margin-top: 4em;
       }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/animate.css">
   </head>
 
   <body>
     <div class="w-full">
-      <h1 class="demo-title">JavaScript Carousel Demo</h1>
       <div
         id="carousel-1"
         class="carousel relative"
         role="region"
         aria-labelledby="carousel-1-title"
       >
-        <h2 class="carousel-title sr-only" id="carousel-1-title">
-          Javascript Carousel Demo
-        </h2>
+        <h2 class="sr-only" id="carousel-1-title">Javascript Carousel Demo</h2>
         <div
-          class="slide"
+          class="slide bg-cover"
           role="tabpanel"
           aria-labelledby="carousel-1-slide-1-title"
+          style="background-image: url('images/pbx.jpg')"
         >
-          <div class="slide-content">
-            <div class="slide-caption">
-              <h1 class="animation-bounce-in-left animation-duration-1s animation-delay-1s opacity-0">Hosted PBX</h1>
-              <h4 class="animation-bounce-in-left animation-duration-1s animation-delay-2s opacity-0">Cloud-based communication system without the chunky equipment.</h4>
-              <div id="specs" class="flex flex-col">
-                <span class="animation-fade-in animation-duration-1s animation-delay-3s opacity-0">Can come with transportable handsets.</span>
-                <span class="animation-fade-in animation-duration-1s animation-delay-4s opacity-0">Compatible with your personal mobile devices.</span>
-                <span class="animation-fade-in animation-duration-1s animation-delay-5s opacity-0">Unlimited extensions.</span>
+          <div class="slide-content montserrat py-12">
+            <div class="slide-caption space-y-4">
+              <h1 class="text-brand font-bold text-5xl uppercase tracking-tight text-shadow animation-bounce-in-left animation-duration-1s animation-delay-1s opacity-0">Hosted PBX</h1>
+              <h4 class="font-medium text-lg tracking-tight text-shadow animation-bounce-in-left animation-duration-1s animation-delay-2s opacity-0">Cloud-based communication system without the chunky equipment.</h4>
+              <div id="specs" class="flex flex-col space-y-2">
+
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-3s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">Can come with transportable handsets.</span>
+                </div>
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-4s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">Compatible with your personal mobile devices.</span>
+                </div>
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-5s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">Unlimited extensions.</span>
+                </div>
               </div>
-              <div>
-                <button class="animation-zoom-in animation-duration-1s animation-delay-6s opacity-0">View All Plans</button>
-                <button class="animation-zoom-in animation-duration-1s animation-delay-6s opacity-0">Try It Free</button>
+              <div class="py-4">
+                <button class="bg-[#252525] border-[#252525] py-2 px-4 animation-zoom-in animation-duration-1s animation-delay-6s opacity-0">View All Plans</button>
+                <button class="bg-[#83689E] border-[#83689E] py-2 px-4 animation-zoom-in animation-duration-1s animation-delay-6s opacity-0">Try It Free</button>
               </div>
             </div>
 
-            <img
-              src="images/pbx.jpg"
-              alt="Hosted PBX"
-            />
           </div>
         </div>
-
         <div
-          class="slide"
+          class="slide bg-cover"
           role="tabpanel"
           aria-labelledby="carousel-1-slide-2-title"
+          style="background-image: url('images/virtual-server.jpg')"
         >
-          <div class="slide-content">
-            <div class="slide-caption">
-              <h3 id="carousel-1-slide-2-title">Virtual Servers</h3>
-              <p>Virtual Servers</p>
+          <div class="slide-content montserrat py-12">
+            <div class="slide-caption space-y-4">
+              <h1 class="text-brand font-bold text-5xl uppercase tracking-tight text-shadow animation-bounce-in-left animation-duration-1s animation-delay-1s opacity-0">Virtual Servers</h1>
+              <h4 class="font-medium text-lg tracking-tight text-shadow animation-bounce-in-left animation-duration-1s animation-delay-2s opacity-0">Enterprise Windows or Linux virtual servers on reliable nodes.</h4>
+              <div id="specs" class="flex space-x-8">
+                <div class="flex flex-col space-y-2">
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-3s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">1x Virtual 1.00Ghz</span>
+                </div>
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-4s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">50 GB Disk space</span>
+                </div>
+                </div>
+                <div class="flex flex-col space-y-2">
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-5s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">2 GB RAM</span>
+                </div>
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-6s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">50 GB Bandwidth out</span>
+                </div>
+                </div>
+              </div>
+              <div class="py-4">
+                <button class="bg-[#252525] border-[#252525] py-2 px-4 animation-zoom-in animation-duration-1s animation-delay-7s opacity-0">View All Plans</button>
+                <button class="bg-[#83689E] border-[#83689E] py-2 px-4 animation-zoom-in animation-duration-1s animation-delay-7s opacity-0">Try It Free</button>
+              </div>
             </div>
-            <img
-              src="images/virtual-server.jpg"
-              alt="Virtual Servers"
-            />
+
           </div>
         </div>
 
         <div
-          class="slide"
+          class="slide bg-cover"
           role="tabpanel"
           aria-labelledby="carousel-1-slide-3-title"
+          style="background-image: url('images/website-hosting.jpg')"
         >
-          <div class="slide-content">
-            <div class="slide-caption">
-              <h3 id="carousel-1-slide-3-title">Website Hosting</h3>
-              <p>Website Hosting</p>
-            </div>
+          <div class="slide-content montserrat py-12">
+            <div class="slide-caption space-y-4">
+              <h1 class="text-brand font-bold text-5xl uppercase tracking-tight text-shadow animation-bounce-in-left animation-duration-1s animation-delay-1s opacity-0">Website Hosting</h1>
+              <h4 class="font-medium text-lg tracking-tight text-shadow animation-bounce-in-left animation-duration-1s animation-delay-2s opacity-0">Powerful shared hosting on enterprise hardware.</h4>
+              <div id="specs" class="flex space-x-8">
+                <div class="flex flex-col space-y-2">
 
-            <img
-              src="images/website-hosting.jpg"
-              alt="Website Hosting"
-            />
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-3s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">Windows ord Linux</span>
+                </div>
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-4s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">10 GB Storage</span>
+                </div>
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-5s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">DNS Hosting</span>
+                </div>
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-6s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">10 GB Monthly traffic</span>
+                </div>
+                </div>
+              </div>
+              <div class="py-4">
+                <button class="bg-[#252525] border-[#252525] py-2 px-4 animation-zoom-in animation-duration-1s animation-delay-7s opacity-0">View All Plans</button>
+                <button class="bg-[#83689E] border-[#83689E] py-2 px-4 animation-zoom-in animation-duration-1s animation-delay-7s opacity-0">Try It Free</button>
+              </div>
+            </div>
           </div>
         </div>
         <div
-          class="slide"
+          class="slide bg-cover"
           role="tabpanel"
           aria-labelledby="carousel-1-slide-4-title"
+          style="background-image: url('images/dedicated-server.jpg')"
         >
-          <div class="slide-content">
-            <div class="slide-caption">
-              <h3 id="carousel-1-slide-4-title">Dedicated Servers</h3>
-              <p>Dedicated Servers</p>
-            </div>
+          <div class="slide-content montserrat py-12">
+            <div class="slide-caption space-y-4">
+              <h1 class="text-brand font-bold text-5xl uppercase tracking-tight text-shadow animation-bounce-in-left animation-duration-1s animation-delay-1s opacity-0">Dedicated Servers</h1>
+              <h4 class="font-medium text-lg tracking-tight text-shadow animation-bounce-in-left animation-duration-1s animation-delay-2s opacity-0">Experience enterprise class dedicated resources.</h4>
+              <div id="specs" class="flex space-x-8">
+                <div class="flex flex-col space-y-2">
 
-            <img
-              src="images/dedicated-server.jpg"
-              alt="Dedicated Servers"
-            />
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-3s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">iDRAC6 Express</span>
+                </div>
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-4s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">2 x 500 GB SATAIII HDD</span>
+                </div>
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-5s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">32GB DDR3 ECC RAM</span>
+                </div>
+                <div class="flex items-center space-x-2 animation-fade-in animation-duration-1s animation-delay-6s opacity-0">
+                  <svg class="fill-current text-[#80699D] size-6 relative svg-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                  <svg class="fill-current text-white absolute svg-shadow size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                  <span class="text-lg tracking-tight text-shadow">Intel Xeon Quad Core 3.3Ghz CPU's</span>
+                </div>
+                </div>
+              </div>
+              <div class="py-4">
+                <button class="bg-[#252525] border-[#252525] py-2 px-4 animation-zoom-in animation-duration-1s animation-delay-7s opacity-0">View All Plans</button>
+                <button class="bg-[#83689E] border-[#83689E] py-2 px-4 animation-zoom-in animation-duration-1s animation-delay-7s opacity-0">Try It Free</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
